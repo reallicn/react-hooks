@@ -6,6 +6,7 @@ import "./index.css";
 /**
   * 核心代码是css绝对定位和相对定位 position:realative/absolute;
   * 给外层容器添加相对定位，再给内层添加相对定位，控制显示隐藏即可
+  * 可以在此基础上添加 in/out 动画
   */
 
 class ButtonSize extends React.Component {
