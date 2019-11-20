@@ -1,3 +1,5 @@
+
+  
 import React from "react";
 import ReactDOM from "react-dom";
 import "antd/dist/antd.css";
@@ -50,11 +52,10 @@ class ButtonSize extends React.Component {
         >
           {close ? "展开" : "收起"}
         </div>
-        {!close && (
           <div style={
-              !close?
+              close?
               { visibility: "hidden",opacity: 0,position: "absolute", right: 20, bottom: 80,transition:"all 0.4s linear" }:
-              { visibility: "visible",opacity: 1,position: "absolute", right: 20, bottom: 80,transition:"all 0.4s linear" }:
+              { visibility: "visible",opacity: 1,position: "absolute", right: 20, bottom: 80,transition:"all 0.4s linear" }
             }>
             <div
               style={{
@@ -86,7 +87,6 @@ class ButtonSize extends React.Component {
               体现
             </div>
           </div>
-        )}
       </div>
     );
   }
