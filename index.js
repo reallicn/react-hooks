@@ -3,6 +3,11 @@ import ReactDOM from "react-dom";
 import "antd/dist/antd.css";
 import "./index.css";
 
+/**
+  * 核心代码是css绝对定位和相对定位 position:realative/absolute;
+  * 给外层容器添加相对定位，再给内层添加相对定位，控制显示隐藏即可
+  */
+
 class ButtonSize extends React.Component {
   state = {
     close: true
